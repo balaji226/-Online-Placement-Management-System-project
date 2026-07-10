@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jobs</title>
+</head>
+<body>
+
+<h2>Available Jobs</h2>
+
+<form onsubmit="return nextPage()">
+
+<select required>
+    <option value="">Select Company</option>
+    <option>TCS</option>
+    <option>Infosys</option>
+    <option>Wipro</option>
+    <option>Accenture</option>
+</select>
+
+<br><br>
+
+<button type="submit">Apply</button>
+
+</form>
+
+<script>
+function nextPage(){
+    window.location.href = "application.html";
+    return false;
+}
+</script>
+
+</body>
+</html>

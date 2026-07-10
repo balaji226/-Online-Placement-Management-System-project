@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="login-container">
+
+<h1>Student Dashboard</h1>
+
+<h3 id="welcome"></h3>
+
+<br>
+
+<a href="jobs.html">
+<button>View Companies</button>
+</a>
+
+<br><br>
+
+<button onclick="logout()">Logout</button>
+
+</div>
+
+<script>
+let user = JSON.parse(localStorage.getItem("student"));
+
+if(user){
+document.getElementById("welcome").innerHTML="Welcome, "+user.name;
+}
+
+function logout(){
+window.location.href="index.html";
+}
+</script>
+
+</body>
+</html>
